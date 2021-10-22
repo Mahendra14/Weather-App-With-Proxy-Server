@@ -30,8 +30,6 @@ input{
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
-
-
 }
 
 input:focus{
@@ -59,3 +57,10 @@ input::placeholder {
       color: black;
       cursor: pointer;
   }
+
+h2{
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 600;
+}
