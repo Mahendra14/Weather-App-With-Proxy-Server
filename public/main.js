@@ -51,4 +51,6 @@ weatherForm.addEventListener('submit' , (e) => {
 
 })
 
+
+//default fetch
 fetchWeather('Hyderabad');
