@@ -1,9 +1,20 @@
 const express = require('express')
 const cors =require('cors')
 require('dotenv').config()
-
+const rateLimit = require('express-rate-limit')
 const app = express()
 
+
+
+//adding rate limiting middleware
+// Rate limiting
+//we can see in the response header a X-rate-limit
+const limiter = rateLimit({
+    windowMs: 10 * 60 * 1000, // 10 Mins
+    max: 100, //max requests made
+  })
+  app.use(limiter)
+  app.set('trust proxy', 1)
 //setting cors
 app.use(cors());
 
