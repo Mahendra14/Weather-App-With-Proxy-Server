@@ -6,8 +6,8 @@ const cityInput = document.querySelector('#city-input');
 const fetchWeather = async (city) => {
     //my api key is : 9d00db2028f7962a749fb09027239dcb
 
-    const url = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=9d00db2028f7962a749fb09027239dcb
-    `;
+    const url =`api.openweathermap.org/data/2.5/weather?q=${city}&appid=9d00db2028f7962a749fb09027239dcb`
+    console.log(url);
     res = await fetch(url);
     data = await res.json();
 
@@ -18,7 +18,7 @@ const fetchWeather = async (city) => {
 
     const dataToDisplay = {
         city: data.name,
-        temp: kelvinToFahrentheit(data.main.temp);
+        temp: kelvinToFahrentheit(data.main.temp)
     }
 
     addWeatherToDom(dataToDisplay);
