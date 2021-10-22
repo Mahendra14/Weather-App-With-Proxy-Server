@@ -7,6 +7,9 @@ const fetchWeather = async (city) => {
     //my api key is : 9d00db2028f7962a749fb09027239dcb
 
     // const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9d00db2028f7962a749fb09027239dcb`
+    const url = `/api?q=${city}`
+    //in the above as our server and this in same we can make use of curretn url to navigate
+    //now as we have a backend our apikey is safe too.
     console.log(url);
     res = await fetch(url);
     data = await res.json();
