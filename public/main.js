@@ -6,7 +6,8 @@ const cityInput = document.querySelector('#city-input');
 const fetchWeather = async (city) => {
     //my api key is : 9d00db2028f7962a749fb09027239dcb
 
-    const url = "";
+    const url = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=9d00db2028f7962a749fb09027239dcb
+    `;
     res = await fetch(url);
     data = await res.json();
 
