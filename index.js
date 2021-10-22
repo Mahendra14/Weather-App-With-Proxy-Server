@@ -18,6 +18,12 @@ const limiter = rateLimit({
 //setting cors
 app.use(cors());
 
+
+//making our public one the static folder in express to open when the server loads
+app.use(express.static('public'))
+
+//we can directly open our application usin the localhost:5000 now cuz its static now
+
 //setting port
 const PORT = process.env.PORT || 5000;
 
