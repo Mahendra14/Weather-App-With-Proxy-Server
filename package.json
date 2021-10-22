@@ -1,0 +1,30 @@
+{
+  "name": "Weather-App-With-Proxy-Server",
+  "version": "1.0.0",
+  "description": "A weather application which will make it calls via a proxy server to conceal important information and also to limit the requests.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahendra14/Weather-App-With-Proxy-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahendra14/Weather-App-With-Proxy-Server/issues"
+  },
+  "homepage": "https://github.com/Mahendra14/Weather-App-With-Proxy-Server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "needle": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
