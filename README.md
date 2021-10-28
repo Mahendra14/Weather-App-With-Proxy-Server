@@ -25,3 +25,6 @@ Hence there is a working weather api using API Proxy and also having features li
 
 to access the application go to the following link:
 https://weather-app-apiproxy.herokuapp.com/
+
+
+## part of fun-implementations
